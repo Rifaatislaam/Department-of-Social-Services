@@ -161,3 +161,88 @@ table {
   font-weight: 200;
   padding: 5px 5px;
 }
+
+.button-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ------------------------------
+here is the button section design 
+-------------------------------*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.btn button,a {
+  padding: 1rem 2rem;
+  background-color: var(--secund-bg-color);
+  border: none;
+  color: var(--text-color);
+  border-radius: 1000px;
+  margin-top: 20px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button::after {
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 107%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  z-index: -1;
+}
+
+.btn a::after {
+  content: "";
+  position: absolute;
+  width: 107%;
+  height: 107%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  z-index: -1;
+}
+.btn > a:hover {
+  z-index: 0;
+  box-shadow: 40px 0 100px #008cff;
+  cursor: pointer;
+}
+
+.btn > button:hover {
+  z-index: 0;
+  box-shadow: 40px 0 100px #008cff;
+  cursor: pointer;
+}
+
+.pera {
+  margin-top: -5rem;
+  border: 0.4px dashed white;
+  margin-bottom: 5rem;
+  padding: 20px 20px;
+  background-color: var(--secund-bg-color);
+}
+.pera > p{
+  font-size: 1.7rem;
+}
+.pera > p > span {
+  color: var(--main-color);
+}
+.webkit {
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: transparent;
+  font-weight: 700;
+  -webkit-text-stroke: 0.5px var(--main-color);
+}
